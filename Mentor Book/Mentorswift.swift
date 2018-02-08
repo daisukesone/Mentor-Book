@@ -22,13 +22,15 @@ class Mentor {
         self.name = name
         self.imageName = imageName
         
+    }
+        
     func getImage() ->UIImage{
         return UIImage(named: imageName)!
             
     }
         
         
-    }
+    
 
     
     
