@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         mentorArray.append(Mentor(name:"りょう", imageName:"ryo.jpg", course:"Unity"))
         mentorArray.append(Mentor(name:"たいてぃ",imageName:"taithi.JPG", course:"Kamera"))
         
+        
         setUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
