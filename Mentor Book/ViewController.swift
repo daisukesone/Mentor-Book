@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet var courseLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     
+    //表示するメンターの番号
+    var Index: Int = 0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,7 @@ class ViewController: UIViewController {
         mentorArray.append(Mentor(name:"りょう", imageName:"ryo.jpg", course:"Unity"))
         mentorArray.append(Mentor(name:"たいてぃ",imageName:"taithi.JPG", course:"Kamera"))
         
+        setUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -43,11 +47,14 @@ class ViewController: UIViewController {
   
     
     @IBAction func mae(){
+        Index -= 1
+        setUI()
         
     }
 
     @IBAction func tugi(){
-        
+        Index += 1
+        setUI()
     }
     
 }
